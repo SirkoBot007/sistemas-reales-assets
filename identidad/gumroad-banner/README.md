@@ -41,9 +41,16 @@ Tipografía Liberation Sans (métricas de Arial/Helvetica).
 
 ## Contenido — solo hechos
 
-Cero métricas, cero clientes, cero testimonios. Lo único factual afirmado es
-**"10 años al frente de un mesón"**, que es la formulación ya validada en
-[[identidad-publica-sirko007]] y en el banner de LinkedIn.
+Cero métricas, cero clientes, cero testimonios. Lo único factual afirmado es la
+**credencial canónica** — **"25 años en hostelería · 10 al frente de un mesón"**
+(variante corta, la que cabe en la columna derecha).
+
+> 🔒 **No se reformula.** Fórmula larga fijada por Alberto el 2026-07-19:
+> **«Más de 25 años en hostelería. Los últimos 10, al frente de un mesón.»**
+> Las dos cifras son ciertas —25 = oficio desde 1999 en muchos locales; 10 = al
+> mando de este mesón, 2015–2025— y **van siempre juntas**. Fuente Única:
+> `02_WIKI/NEGOCIOS/identidad-publica-sirko007.md` §LA CREDENCIAL.
+> *(Regenerado el 2026-07-19 para aplicarla: antes ponía solo "10 años".)*
 
 ## Regenerar
 

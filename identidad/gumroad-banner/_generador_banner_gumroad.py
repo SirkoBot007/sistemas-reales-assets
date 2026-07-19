@@ -135,7 +135,7 @@ def v1(W, H):
     xr = W - int(96 * S)
     fr_k = F(14 * S, True)
     fr_v = F(17 * S, True)
-    filas = [("HECHO POR", "quien estuvo 10 años al frente de un mesón"),
+    filas = [("HECHO POR", "25 años en hostelería · 10 al frente de un mesón"),
              ("FUNCIONA EN", "tu ordenador — n8n e IA local"),
              ("SE PAGA", "una vez, no cada mes")]
     yr = int(96 * S)
