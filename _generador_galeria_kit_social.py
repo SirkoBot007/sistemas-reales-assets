@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """Galerias Kit Freelancer + Social Media Planner — estilo Sistemas Reales, 1280x720,
+# NORMA 2026-07-20: NINGUNA imagen lleva el precio del producto dentro.
+# El precio lo pone Gumroad y cambia; la imagen no. Ver [[normas-de-alberto]].
 Pillow puro. Contenido REAL de los productos (Regla de las imagenes: nada de humo)."""
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pathlib import Path
@@ -67,7 +69,7 @@ def k1():
         d.text((104,y+56),v,font=F(15),fill=GRAY); y+=116
     card(d,858,258,368,100,"FORMATOS","Excel · Sheets · LibreOffice",CYAN,vsize=17)
     card(d,858,374,368,100,"GUÍA DE USO","Incluida (PDF paso a paso)",GREEN,vsize=17)
-    sello(d,858,490,368,"Kit Freelancer Esencial · 24,99 € · pago único")
+    sello(d,858,490,368,"Kit Freelancer Esencial · pago único")
     footer(d,FK,"1 / 6"); img.save(ko("gal-1-portada.png")); print("k1")
 
 def k2():
@@ -177,7 +179,7 @@ def k6():
     d.text((692,276),"LO QUE NO",font=F(13,bold=True),fill=RED); yy=316
     for t in no:
         d.text((694,yy-2),"×",font=F(20,bold=True),fill=RED); d.text((716,yy),t,font=F(15),fill=GRAY); yy+=52
-    sello(d,692,470,510,"Kit Freelancer Esencial · 24,99 € · pago único")
+    sello(d,692,470,510,"Kit Freelancer Esencial · pago único")
     footer(d,FK,"6 / 6"); img.save(ko("gal-6-que-si-que-no.png")); print("k6")
 
 # ===================== SOCIAL PLANNER =====================
@@ -201,7 +203,7 @@ def s1():
         rrect(d,[x,y,x+286,y+150],13,fill=PANEL,outline=PANEL_B,width=1)
         dot(d,x+22,y+34,c,r=7); d.text((x+40,y+24),k,font=F(15,bold=True),fill=WHITE)
         d.text((x+22,y+64),v,font=F(13),fill=GRAY); x+=294
-    sello(d,54,440,560,"Social Media Content Planner 2026 · 12,99 € · pago único")
+    sello(d,54,440,560,"Social Media Content Planner 2026 · pago único")
     card(d,634,440,592,62,"15 HOJAS · 1 SOLO ARCHIVO","Excel · Google Sheets · LibreOffice",CYAN,vsize=16)
     footer(d,FS,"1 / 6"); img.save(so("gal-1-portada.png")); print("s1")
 
@@ -324,7 +326,7 @@ def s6():
         d.text((104,y+46),v,font=F(14),fill=GRAY); y+=98
     card(d,792,256,434,120,"GUÍA DE USO","Hoja en el Excel + PDF aparte",GREEN,vsize=18)
     card(d,792,392,434,120,"FUNCIONA EN","Excel · Sheets · LibreOffice",CYAN,vsize=18)
-    sello(d,792,528,434,"12,99 € · pago único, sin cuotas")
+    sello(d,792,528,434,"Pago único, sin cuotas")
     footer(d,FS,"6 / 6"); img.save(so("gal-6-cierre.png")); print("s6")
 
 if __name__=="__main__":

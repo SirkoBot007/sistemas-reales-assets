@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """Galeria Barriles + Desperdicio — estilo Sistemas Reales, 1280x720, Pillow puro.
+# NORMA 2026-07-20: NINGUNA imagen lleva el precio del producto dentro.
+# El precio lo pone Gumroad y cambia; la imagen no. Ver [[normas-de-alberto]].
 Emojis dibujados a mano (DejaVu no los trae). Cifras reales de las guias."""
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 from pathlib import Path
@@ -61,7 +63,7 @@ def b1():
     d.text((px+22,py+196),"Rendimiento 90,07 %  ·  cada caña te cuesta 0,77 € en vez de 0,64 €",font=F(15,bold=True),fill=AMBER)
     card(d,900,270,326,84,"CÓMO SE APUNTA","Telegram",CYAN)
     card(d,900,368,326,84,"INTELIGENCIA","Sin IA",GREEN)
-    sello(d,900,466,326,"59 € · pago único, sin cuota")
+    sello(d,900,466,326,"Pago único, sin cuota")
     footer(d,FOOT_B,"1 / 6"); img.save(bar_out("gal-1-portada.png")); print("bar1")
 
 def b2():
@@ -139,7 +141,7 @@ def b6():
         rrect(d,[54,y,820,y+92],12,fill=CARD,outline=CARD_B,width=1)
         dot(d,80,y+46,GREEN,r=8); d.text((104,y+18),k,font=F(18,bold=True),fill=WHITE)
         d.text((104,y+50),v,font=F(14),fill=GRAY); y+=106
-    sello(d,850,262,376,"59 € · pago único");
+    sello(d,850,262,376,"Pago único, sin cuota");
     card(d,850,340,376,120,"LO QUE AHORRAS EN 1 BARRIL MALO","25,96 €",RED)
     d.text((850,472),"Con recuperar un barril al mes,",font=F(14),fill=GRAY)
     d.text((850,494),"el sistema ya se ha pagado.",font=F(14,bold=True),fill=WHITE)

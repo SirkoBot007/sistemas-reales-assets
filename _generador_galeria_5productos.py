@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """Galerias Sistemas Reales — 5 productos, 6 imgs 1280x720, Pillow puro, contenido REAL."""
+# NORMA 2026-07-20: NINGUNA imagen lleva el precio del producto dentro.
+# El precio lo pone Gumroad y cambia; la imagen no. Ver [[normas-de-alberto]].
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pathlib import Path
 BASE="/sessions/quirky-brave-knuth/mnt/CEREBRO-DIGITAL-ALBERTO/_recursos/_assets-publicos"
@@ -64,7 +66,7 @@ def f_pro():
     bullets(d,80,410,[("Workflow n8n PRO con umbral de confianza configurable",WHITE),
         ("5 prompts por tipo de factura + 6 facturas de prueba realistas",WHITE),
         ("Guía de instalación en 10 pasos + doc de 7 errores comunes",WHITE)],lh=44)
-    sello(d,880,404,346,"SIN NUBE · SIN CLAVES · SIN CUOTA","Pack Completo · 25 € · pago único")
+    sello(d,880,404,346,"SIN NUBE · SIN CLAVES · SIN CUOTA","Pack Completo · pago único")
     footer(d,FT,"1 / 6"); save(img,S,"gal-1-portada.png")
 def f_pro2():
     img=bg_base(); d,_=header(img,MK,[[("De un PDF a 4 datos limpios,",WHITE)],[("en segundos.",CYAN)]],
@@ -131,7 +133,7 @@ def f_pro6():
         x=x0+(i%2)*(w+gx); y=y0+(i//2)*(h+gy)
         rrect(d,[x,y,x+w,y+h],12,fill=CARD,outline=CARD_B,width=1)
         d.text((x+22,y+24),k,font=F(20,bold=True),fill=c); d.text((x+22,y+64),v,font=F(15),fill=GRAY)
-    footer(d,FT,"@sistemasreales · Pack Completo 25 €"); save(img,S,"gal-6-garantias.png")
+    footer(d,FT,"@sistemasreales · Pack Completo"); save(img,S,"gal-6-garantias.png")
 
 # ============ 2) FACTURAS PLANTILLA n8n (GRATIS) — facturas-n8n-free ============
 S2="facturas-n8n-free"; MK2="SISTEMAS REALES · FACTURAS AUTOMÁTICO · PLANTILLA GRATIS"; FT2="Sistemas Reales · Facturas Automático (Plantilla n8n)"
@@ -202,7 +204,7 @@ def g5():
 def g6():
     img=bg_base(); d,_=header(img,MK2,[[("¿Quieres el sistema",WHITE)],[("completo?",AMBER)]],
         "Esta plantilla es el episodio gratis. El Pack Completo lleva más.")
-    panel(d,54,258,1172,220,"EL PACK COMPLETO (25 €) AÑADE")
+    panel(d,54,258,1172,220,"EL PACK COMPLETO AÑADE")
     bullets(d,80,300,[("6 facturas de prueba en vez de 2 (proveedor, multilínea, Stripe, IVA…)",WHITE),
         ("5 prompts afinados por tipo de factura",WHITE),
         ("Umbral de confianza configurable (decides cuándo revisar)",WHITE),
@@ -222,7 +224,7 @@ def e1():
     bullets(d,80,410,[("Cubren el ciclo completo: captar, vender, recuperar y fidelizar",WHITE),
         ("Compatibles con Mailchimp, ActiveCampaign, Klaviyo, Brevo, MailerLite",WHITE),
         ("Solo reemplazas las [VARIABLES] con tus datos y envías",WHITE)],lh=44)
-    sello(d,880,404,346,"HTML LISTO · MÓVIL Y ESCRITORIO","Pack 5 plantillas · 17 €",col=CYAN,bg=(14,28,40),ob=(30,60,90))
+    sello(d,880,404,346,"HTML LISTO · MÓVIL Y ESCRITORIO","Pack 5 plantillas · pago único",col=CYAN,bg=(14,28,40),ob=(30,60,90))
     footer(d,FT3,"1 / 6"); save(img,S3,"gal-1-portada.png")
 def e2():
     img=bg_base(); d,_=header(img,MK3,[[("Las 5 plantillas",WHITE),(" del pack.",CYAN)]],
@@ -276,13 +278,13 @@ def e6():
     items=[("5 plantillas HTML","Ciclo completo de email marketing",CYAN),
            ("Guía de uso incluida","Excel con qué es cada email y cuándo enviarlo",GREEN),
            ("Personalizable","Cambia colores, textos y CTA en minutos",VIOLET),
-           ("Pago único","17 € · sin cuotas, tuyo para siempre",AMBER)]
+           ("Pago único","Sin cuotas: tuyo para siempre",AMBER)]
     x0,y0=54,262;w,h=580,132;gx,gy=12,16
     for i,(k,v,c) in enumerate(items):
         x=x0+(i%2)*(w+gx); y=y0+(i//2)*(h+gy)
         rrect(d,[x,y,x+w,y+h],12,fill=CARD,outline=CARD_B,width=1)
         d.text((x+22,y+24),k,font=F(19,bold=True),fill=c); d.text((x+22,y+64),v,font=F(14.5),fill=GRAY)
-    footer(d,FT3,"@sistemasreales · Pack Email 17 €"); save(img,S3,"gal-6-cierre.png")
+    footer(d,FT3,"@sistemasreales · Pack Email"); save(img,S3,"gal-6-cierre.png")
 
 # ============ 4) TRACKER FINANZAS 2026 15 € — tracker-finanzas-2026 ============
 S4="tracker-finanzas-2026"; MK4="SISTEMAS REALES · TRACKER DE FINANZAS PERSONALES 2026"; FT4="Sistemas Reales · Tracker de Finanzas Personales 2026"
@@ -297,7 +299,7 @@ def t1():
     bullets(d,80,410,[("Ves de un vistazo cuánto entra, cuánto sale y cuánto ahorras cada mes",WHITE),
         ("La tasa de ahorro te dice si vas bien (10% ok · 20%+ excelente)",WHITE),
         ("Sin saber de Excel: solo escribes números en la hoja del mes",WHITE)],lh=44)
-    sello(d,880,404,346,"SIN CUOTA · SIN APPS · ES TUYO","Tracker 2026 · 15 € · pago único")
+    sello(d,880,404,346,"SIN CUOTA · SIN APPS · ES TUYO","Tracker 2026 · pago único")
     footer(d,FT4,"1 / 6"); save(img,S4,"gal-1-portada.png")
 def t2():
     img=bg_base(); d,_=header(img,MK4,[[("El dashboard anual,",WHITE)],[("automático.",GREEN)]],
@@ -356,13 +358,13 @@ def t6():
     items=[("Se actualiza solo","El dashboard suma tus 12 meses automático",GREEN),
            ("Guía incluida","Paso a paso dentro del propio archivo",CYAN),
            ("Compatible","Excel · Google Sheets · LibreOffice",VIOLET),
-           ("Pago único","15 € · sin cuotas ni apps que instalar",AMBER)]
+           ("Pago único","Sin cuotas ni apps que instalar",AMBER)]
     x0,y0=54,262;w,h=580,132;gx,gy=12,16
     for i,(k,v,c) in enumerate(items):
         x=x0+(i%2)*(w+gx); y=y0+(i//2)*(h+gy)
         rrect(d,[x,y,x+w,y+h],12,fill=CARD,outline=CARD_B,width=1)
         d.text((x+22,y+24),k,font=F(19,bold=True),fill=c); d.text((x+22,y+64),v,font=F(14.5),fill=GRAY)
-    footer(d,FT4,"@sistemasreales · Tracker 2026 · 15 €"); save(img,S4,"gal-6-cierre.png")
+    footer(d,FT4,"@sistemasreales · Tracker 2026"); save(img,S4,"gal-6-cierre.png")
 
 # ============ 5) PACK 200+ PROMPTS 19 € — prompts-200-negocios ============
 S5="prompts-200-negocios"; MK5="SISTEMAS REALES · PACK 200+ PROMPTS IA PARA NEGOCIOS"; FT5="Sistemas Reales · Pack 200+ Prompts IA para Negocios"
@@ -377,7 +379,7 @@ def p1():
     bullets(d,80,410,[("Cada prompt lleva rol + contexto + formato de salida pedido",WHITE),
         ("Solo reemplazas las [VARIABLES EN MAYÚSCULAS] con tus datos",WHITE),
         ("Organizados en 8 pestañas con autofiltro para buscar por palabra",WHITE)],lh=44)
-    sello(d,880,404,346,"204 PROMPTS · 8 CATEGORÍAS","Pack Prompts · 19 € · pago único",col=VIOLET,bg=(26,20,42),ob=(60,45,95))
+    sello(d,880,404,346,"204 PROMPTS · 8 CATEGORÍAS","Pack Prompts · pago único",col=VIOLET,bg=(26,20,42),ob=(60,45,95))
     footer(d,FT5,"1 / 6"); save(img,S5,"gal-1-portada.png")
 def p2():
     img=bg_base(); d,_=header(img,MK5,[[("8 categorías,",WHITE),(" 204 prompts.",CYAN)]],
@@ -436,13 +438,13 @@ def p6():
     items=[("204 prompts","8 categorías de negocio",VIOLET),
            ("Autofiltro","Busca por palabra clave en cada pestaña",CYAN),
            ("Todo en un Excel","Una pestaña por área, fácil de navegar",GREEN),
-           ("Pago único","19 € · sin cuotas, tuyo para siempre",AMBER)]
+           ("Pago único","Sin cuotas: tuyo para siempre",AMBER)]
     x0,y0=262-0,262;w,h=580,132;gx,gy=12,16; x0=54
     for i,(k,v,c) in enumerate(items):
         x=x0+(i%2)*(w+gx); y=y0+(i//2)*(h+gy)
         rrect(d,[x,y,x+w,y+h],12,fill=CARD,outline=CARD_B,width=1)
         d.text((x+22,y+24),k,font=F(19,bold=True),fill=c); d.text((x+22,y+64),v,font=F(14.5),fill=GRAY)
-    footer(d,FT5,"@sistemasreales · Pack Prompts 19 €"); save(img,S5,"gal-6-cierre.png")
+    footer(d,FT5,"@sistemasreales · Pack Prompts"); save(img,S5,"gal-6-cierre.png")
 
 for fn in [f_pro,f_pro2,f_pro3,f_pro4,f_pro5,f_pro6, g1,g2,g3,g4,g5,g6, e1,e2,e3,e4,e5,e6, t1,t2,t3,t4,t5,t6, p1,p2,p3,p4,p5,p6]:
     fn()
