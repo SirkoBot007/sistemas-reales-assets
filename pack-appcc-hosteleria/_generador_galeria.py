@@ -148,7 +148,7 @@ def img4():
         "Llega solo. O lo pides con /appcc. Solo te aprueba si no hay huérfanas ni días en blanco.")
     px,py,pw,ph=54,268,760,368
     rrect(d,[px,py,px+pw,py+ph],14,fill=PANEL,outline=PANEL_B,width=1)
-    d.text((px+22,py+18),"📋 Mesón El Roble — registro APPCC (30 días)",font=F(13,bold=True),fill=WHITE)
+    d.text((px+22,py+18),"Mesón Viña T — registro APPCC (30 días)",font=F(13,bold=True),fill=WHITE)
     block(d,px,py+48,22,[
         (None,"4 lecturas en 2 días",F(13.5,mono=True),GRAY,32),
         (None,"Lo que te puede costar dinero:",F(14,bold=True),AMBER,30),

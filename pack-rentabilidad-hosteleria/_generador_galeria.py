@@ -116,7 +116,7 @@ def img2():
     rrect(d,[px,py,px+pw,py+ph],14,fill=PANEL,outline=PANEL_B,width=1)
     d.text((px+22,py+18),"EL MENSAJE DE LAS 8:00",font=F(11,bold=True),fill=GRAY2)
     block(d,px,py+48,22,[
-        (None,"Mesón El Roble — coste de carta",F(15,bold=True),WHITE,26),
+        (None,"Mesón Viña T — coste de carta",F(15,bold=True),WHITE,26),
         (None,"4 platos · food cost medio 23,8 % (objetivo 30 %)",F(13,mono=True),GRAY,32),
         ('red',"Croquetas de jamón (6 ud)",F(15,bold=True),RED,26),
         (None,"food cost 35,5 % · coste 4,04 € · PVP 12,50 €",F(13,mono=True),MONO_C,24),
