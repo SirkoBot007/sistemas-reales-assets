@@ -49,7 +49,7 @@ Cero métricas, cero clientes, cero testimonios. Lo único factual afirmado es l
 > **«Más de 25 años en hostelería. Los últimos 10, al frente de un mesón.»**
 > Las dos cifras son ciertas —25 = oficio desde 1999 en muchos locales; 10 = al
 > mando de este mesón, 2015–2025— y **van siempre juntas**. Fuente Única:
-> `02_WIKI/NEGOCIOS/identidad-publica-sirko007.md` §LA CREDENCIAL.
+> `02_WIKI/identidad-publica-sirko007.md` §LA CREDENCIAL.
 > *(Regenerado el 2026-07-19 para aplicarla: antes ponía solo "10 años".)*
 
 ## Regenerar
