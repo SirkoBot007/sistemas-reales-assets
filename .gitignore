@@ -1,0 +1,12 @@
+# Repo PUBLICO: aqui solo entra lo que ya iba a ser publico.
+
+# Montajes de verificacion = artefactos internos de QA (hojas de contacto
+# con las 6 imagenes de cada galeria juntas). No son assets de escaparate
+# y llevan el precio incrustado, asi que envejecen mal.
+_montajes-verificacion/
+
+# Material temporal de trabajo
+_tmp_*/
+*.tmp
+Thumbs.db
+.DS_Store
