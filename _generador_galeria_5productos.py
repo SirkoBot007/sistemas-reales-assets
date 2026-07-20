@@ -4,7 +4,9 @@
 # El precio lo pone Gumroad y cambia; la imagen no. Ver [[normas-de-alberto]].
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pathlib import Path
-BASE="/sessions/quirky-brave-knuth/mnt/CEREBRO-DIGITAL-ALBERTO/_recursos/_assets-publicos"
+# Ruta SIEMPRE relativa a este fichero. Norma: ningun generador lleva rutas
+# absolutas de sesion (se murio una sesion y el script reventaba con PermissionError).
+BASE=str(Path(__file__).resolve().parent)
 W,H=1280,720
 BG=(10,14,24); PANEL=(15,21,32); PANEL_B=(34,48,74); CARD=(23,28,40); CARD_B=(42,50,68)
 CYAN=(56,189,248); RED=(244,63,94); GREEN=(52,211,153); AMBER=(251,191,36); VIOLET=(167,139,250)
@@ -332,9 +334,11 @@ def t3():
 def t4():
     img=bg_base(); d,_=header(img,MK4,[[("Tu número clave:",WHITE)],[("la tasa de ahorro.",GREEN)]],
         "El % de tus ingresos que consigues guardar cada mes. Súbelo poco a poco.")
-    card(d,54,270,380,150,"10%","Un buen comienzo",AMBER,vsize=44)
-    card(d,452,270,380,150,"20%+","Excelente",GREEN,vsize=44)
-    card(d,850,270,376,150,"AUTO","Se calcula sola",CYAN,vsize=34)
+    # OJO: en card() k = etiqueta pequeña, v = cifra grande. Estaban al reves y
+    # "Un buen comienzo" a 44 px se salia de la tarjeta invadiendo la de al lado.
+    card(d,54,270,380,150,"UN BUEN COMIENZO","10%",AMBER,vsize=44)
+    card(d,452,270,380,150,"EXCELENTE","20%+",GREEN,vsize=44)
+    card(d,850,270,376,150,"SE CALCULA SOLA","Auto",CYAN,vsize=44)
     panel(d,54,446,1172,112,"EL HÁBITO QUE LO CAMBIA TODO")
     d.text((80,486),"Dedica 10 minutos el último día de cada mes a actualizar el tracker. Ese hábito mejora tus finanzas de verdad.",font=F(15),fill=GRAY)
     footer(d,FT4,"4 / 6"); save(img,S4,"gal-4-tasa.png")

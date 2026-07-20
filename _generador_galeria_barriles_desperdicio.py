@@ -45,7 +45,8 @@ def footer(d,left,right):
 
 # ---------------- BARRILES ----------------
 def bar_out(name):
-    return Path("/sessions/fervent-optimistic-newton/mnt/CEREBRO-DIGITAL-ALBERTO/_recursos/_assets-publicos/control-barriles-bar/galeria")/name
+    # Ruta relativa a este fichero (norma: nada de rutas absolutas de sesion).
+    return Path(__file__).resolve().parent/"control-barriles-bar/galeria"/name
 MARCA_B="SISTEMAS REALES  ·  n8n PARA HOSTELERÍA"
 FOOT_B="Sistemas Reales · Control de barriles"
 
@@ -149,7 +150,8 @@ def b6():
 
 # ---------------- DESPERDICIO ----------------
 def des_out(name):
-    return Path("/sessions/fervent-optimistic-newton/mnt/CEREBRO-DIGITAL-ALBERTO/_recursos/_assets-publicos/control-desperdicio-gratis/galeria")/name
+    # Ruta relativa a este fichero (norma: nada de rutas absolutas de sesion).
+    return Path(__file__).resolve().parent/"control-desperdicio-gratis/galeria"/name
 MARCA_D="SISTEMAS REALES  ·  n8n PARA HOSTELERÍA"
 FOOT_D="Sistemas Reales · Control de desperdicio (GRATIS)"
 
